@@ -1,0 +1,44 @@
+.calculator__background_image {
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    background-size: cover;
+    width: 1215px;
+    height: 920px;
+    max-height: 920px;
+    margin: 0 auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.calculator__box_position {
+    margin-top: 170px;
+    margin-left: 200px;
+}
+
+.calculator__input {
+    width: 430px;
+    overflow: hidden;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-shadow: 0 0 5px rgb(43, 255, 43);
+}
+
+.calculator__input::placeholder {
+    color: rgb(0, 255, 0);
+    text-shadow: 0 0 5px rgb(43, 255, 43);
+    font: 1.3rem Inconsolata, monospace;
+}
+
+.calculator__keyboard {
+    width: 435px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 545px;
+    margin-left: 225px;
+}

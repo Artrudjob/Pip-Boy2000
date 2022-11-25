@@ -1,6 +1,7 @@
 .button {
-    min-width: 30px;
-    border-radius: 20px;
+    width: 35px;
+    height: 30px;
+    border-radius: 180px;
     border: 2px solid rgb(119,133,130);
     background: rgb(96,66,69);
     box-shadow: 3px 3px 3px rgba(64, 43, 45, .4);

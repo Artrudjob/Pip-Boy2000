@@ -1,16 +1,26 @@
-import React, {FC} from "react";
-import styles from "./button.module.css";
+import React, {FC} from 'react';
+import styles from './button.module.css';
 
 type TProps = {
-    text: string;
-    sup?: string;
-    sub?: string;
+    value: string,
+    sup?: string,
+    sub?: string,
+    width?: number,
+    disabled: boolean,
+    onClick: () => void,
 }
 
-const Button: FC<TProps> = ({text, sup, sub}) => {
+const Button: FC<TProps> = ({
+    value,
+    sup,
+    sub,
+    width,
+    disabled,
+    onClick
+}) => {
 
     return (
-        <button className={styles.button}>{text}
+        <button className={styles.button} style={{width: `${width}px`}} disabled={disabled} onClick={onClick}>{value}
             <sup>{sup}</sup>
             <sub>{sub}</sub>
         </button>

@@ -1,9 +1,15 @@
 export const currentDate = {
-    day: new Date().getDay(),
-    shortMonth: new Date().toLocaleString('ru', {
+    day: new Date().getDate(),
+    shortMonthRu: new Date().toLocaleString('ru', {
         month: 'short'
     }),
-    longMonth: new Date().toLocaleString('ru', {
+    longMonthRu: new Date().toLocaleString('ru', {
+        month: 'long'
+    }),
+    shortMonthEng: new Date().toLocaleString('eng', {
+        month: 'short'
+    }),
+    longMonthEng: new Date().toLocaleString('eng', {
         month: 'long'
     }),
     year: new Date().getFullYear(),

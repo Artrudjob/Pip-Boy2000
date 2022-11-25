@@ -1,0 +1,40 @@
+@-webkit-keyframes blink {
+    50% {
+        color:  rgb(0, 255, 0);
+        text-shadow: 0 0 5px rgb(43, 255, 43);
+    }
+    51% {
+        color: rgba(34, 34, 34, 0);
+        text-shadow: none;
+    }
+    100% {
+        color: rgba(34, 34, 34, 0);
+        text-shadow: none;
+    }
+}
+@keyframes blink {
+    50% {
+        color:  rgb(0, 255, 0);
+        text-shadow: 0 0 5px rgb(43, 255, 43);
+    }
+    51% {
+        color: rgba(34, 34, 34, 0);
+        text-shadow: none;
+    }
+    100% {
+        color: rgba(34, 34, 34, 0);
+        text-shadow: none;
+    }
+}
+
+.loader {
+    width: 430px;
+    text-align: left;
+    text-shadow: 0 0 5px rgb(43, 255, 43);
+}
+
+.loader__blink {
+    -webkit-animation: blink 2s linear infinite;
+    animation: blink 2s linear infinite;
+    text-shadow: 0 0 5px rgb(43, 255, 43);
+}

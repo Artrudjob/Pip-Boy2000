@@ -1,0 +1,150 @@
+.main {
+    width: 100%;
+}
+
+.main__background_color {
+    position: relative;
+    background-color: black;
+    background-image: radial-gradient(
+            rgba(0, 159, 0, .75), black 120%
+    );
+    width: 550px;
+    height: 450px;
+    margin: 150px auto 0 550px;
+    z-index: 0;
+}
+
+.main__background_color::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, .15),
+            rgba(0, 0, 0, .15) 1px,
+            transparent 1px,
+            transparent 2px
+    );
+}
+
+.main__navigate {
+    width: 160px;
+    position: absolute;
+    top: 36px;
+    left: 742px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.main__linkBox {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.main__linkBox:nth-child(2) {
+    margin-bottom: 18px;
+}
+
+.main__link {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 5px solid transparent;
+    border-radius: 180px;
+    background: transparent;
+}
+
+.main__link_active {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 5px solid rgb(195,69,46);
+    border-radius: 180px;
+    background: rgb(207, 74, 40) radial-gradient(
+            rgba(252, 243, 102, .75), rgb(207, 74, 40) 60%
+    );
+    background-blend-mode: screen;
+    opacity: .7;
+}
+
+.main__linkText {
+    width: 100px;
+    color: rgb(173,127,49);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.main__flexContainer {
+    width: 520px;
+    position: absolute;
+    top: 450px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.main__btnBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.main__button {
+    width: 45px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid rgb(201,72,44);
+    border-radius: 80px;
+    margin-top: 8px;
+    margin-left: 2px;
+    transition: .3s linear;
+}
+
+.main__button:hover {
+    cursor: pointer;
+    background: rgb(147,49,43);
+}
+
+.main__button:active {
+    border-color: rgb(147,49,43);
+    background: rgb(99, 35, 31);
+}
+
+.main__lang {
+    margin-top: 22px;
+    width: 35px;
+    text-align: center;
+    background-color: rgb(85,93,95);
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgb(107, 112, 110);
+}
+
+.main__dateBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+
+.main__date {
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.main__text {
+    color: rgb(173,127,49);
+    font-size: 1em;
+    font-weight: bold;
+}
